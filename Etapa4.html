@@ -1,0 +1,238 @@
+<html>
+<head>
+<title>www.caminokiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i  ) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i  )
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j  ].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p 1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i  ) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i  ) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i =3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j  ]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i 2];}
+}
+//-->
+</script>
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="blendTrans(Duration=2.0,Transition=18)">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="initiate();MM_preloadImages('images/prologob.gif','images/1etapab.gif','images/2etapab.gif','images/3etapab.gif','images/4etapab.gif','images/5etapab.gif','images/santiagob.gif')">
+<div id="Layer1" style="position:absolute; left:0px; top:0px; width:589px; height:426px; z-index:1"> 
+  <table border="0" cellpadding="0" cellspacing="0" width="1024">
+    <!-- fwtable fwsrc="S0001.png" fwbase="htm.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td><img src="images/spacer.gif" width="72" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="108" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="844" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="1" height="1" border="0"></td>
+    </tr>
+    <tr> 
+      <td colspan="3" background="images/htm_r1_c1.jpg"><div id="Layer3" style="position:absolute; width:200px; height:61px; z-index:3; left: 373px; top: 10px;">
+        <script>
+<!-- Beginning of JavaScript -
+
+
+var message = new Array()
+message[0]="¡HA SIDO TODO            UN HONOR!"
+message[1]="Poder hacer el           camino con"
+message[2]="vosotros, la             experiencia"
+message[3]="es inolvidable           compartamosla"
+message[4]="con nuestros             amigos"
+message[5]="a traves de              nuestra web"
+// Width an height of your TextRotor (pixels).
+var scrollerheight=200
+var scrollerwidth=800
+
+// Edit font
+var font_family="Verdana"
+
+// Edit font-size
+var font_size=30
+
+// The horizontal and vertical position of your TextRotor (pixel)
+var x_textposition=10
+var y_textposition=10
+
+// Do not edit the variables below
+var i_message=0
+var i_loop=0
+var max_loop=45
+var timer
+scrollerwidth=2*scrollerwidth
+y_textposition=y_textposition-scrollerheight font_size
+x_textposition=x_textposition-Math.floor(scrollerwidth/2)
+
+
+function initiate() {
+	if (document.all) {		
+		document.all.rotationstyle.style.posLeft=x_textposition
+		document.all.rotationstyle.style.posTop=y_textposition
+        changemessage()
+	}
+}
+
+function changemessage() {
+		do_rotate="yes"
+		rotationstyle.innerHTML=
+		'<OBJECT ID="rotationobj" CLASSID="CLSID:369303C2-D7AC-11d0-89D5-00A0C90833E6" STYLE="position:relative;width:' scrollerwidth 'px;height:' 2*scrollerheight 'px">' 
+        '<PARAM NAME="Line0001" VALUE="SetLineStyle(0)">' 
+        '<PARAM NAME="Line0002" VALUE="SetLineColor(255,255,255)">' 
+		'<PARAM NAME="Line0003" VALUE="SetFillColor(0,0,255)">' 
+		'<PARAM NAME="Line0004" VALUE="SetFont(\'' font_family '\', ' font_size ', 400, 0, 0, 0)">' 
+		'<PARAM NAME="Line0005" VALUE="Text(\'' message[i_message] '\',0, 2, 0)">' 
+		'</OBJECT>'		
+		rotationobj.Rotate(-90,0,0) 
+		startscroll()
+		
+}
+
+function startscroll() {
+	if (i_loop < max_loop) {
+        rotationobj.Rotate(2,0,0) 
+
+		i_loop  
+		timer=setTimeout("startscroll()",20)
+	}
+   else {
+		i_loop=0
+		timer=setTimeout("endscroll()",2000)
+	}
+}
+
+function endscroll() {
+	if (i_loop < max_loop) {
+        rotationobj.Rotate(-2,0,0) 
+
+		i_loop  
+		timer=setTimeout("endscroll()",50)
+	}
+   else {
+        i_message  
+		i_loop=0
+        if (i_message>=message.length) {i_message=0}
+		timer=setTimeout("changemessage()",1000)
+	}
+}
+
+// - End of JavaScript - -->
+        </script>
+        <span id="rotationstyle" style="position:absolute; left:143px; top:20px">
+        <object id="rotationobj" classid="CLSID:369303C2-D7AC-11d0-89D5-00A0C90833E6" width="14" height="14">
+        </object>
+        </span> <br>
+&nbsp;
+<p></p>
+      </div>
+
+
+
+
+
+      <div id="Layer4" style="position:absolute; width:50px; height:54px; z-index:3; left: 866px; top: 20px;"><img src="images/todos3.gif" width="51" height="56"></div></td>
+      <td><img src="images/spacer.gif" width="1" height="144" border="0"></td>
+    </tr>
+    <tr> 
+      <td rowspan="8"><img name="htm_r2_c1" src="images/htm_r2_c1.jpg" width="72" height="624" border="0"></td>
+      <td><a href="Prologo.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','images/prologob.gif',1)"><img src="images/prologo.gif" alt="PROLOGO DESDE SEVILLA A LUGO" name="Image24" width="108" height="36" border="0"></a></td>
+      <td rowspan="8"><img name="htm_r2_c3" src="images/htm_r2_c31.jpg" width="844" height="624" border="0"></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','images/1etapab.gif',1)"><img src="images/1etapa.gif" alt="1ª ETAPA (DE SARRIA A PORTOMARIN)" name="Image25" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','images/2etapab.gif',1)"><img src="images/2etapa.gif" alt="2ª ETAPA (DE PORTOMARIN A PALAS DE REI)" name="Image26" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','images/3etapab.gif',1)"><img src="images/3etapa.gif" alt="3ª ETAPA ((DE PALAS DE REI HASTA ARZUA)" name="Image27" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','images/4etapab.gif',1)"><img src="images/4etapa.gif" alt="4ª ETAPA (DE ARZUA HASTA ARCA DO PINO)" name="Image28" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','images/5etapab.gif',1)"><img src="images/5etapa.gif" alt="5ª ETAPA (DE ARCA DO PINO HASTA SANTIAGO)" name="Image29" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="fotos.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','images/santiagob.gif',1)"><img src="images/santiago.gif" alt="(FIN DE FIESTA EN SANTIAGO) se acabó" name="Image30" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td background="images/htm_r9_c2.jpg" bgcolor="#000000"><p align="center">&nbsp;</p>
+        <p align="center"><a href="montajes.html"><img src="images/risa.gif" width="50" height="45" border="0"></a> </p>
+        <p align="center"><a href="mailto:galloso@auna.com"><img src="images/email_014.gif" width="50" height="50" border="0"></a></p>
+      <p align="center"><a href="index.html"><img src="images/inicio.gif" width="50" height="60" border="0"></a></p>
+      <p>&nbsp;</p>      </td>
+      <td><img src="images/spacer.gif" width="1" height="372" border="0"></td>
+    </tr>
+  </table>
+</div>
+<div id="Layer2" style="position:absolute; left:358px; top:156px; width:560px; height:494px; z-index:2; overflow: auto;">
+  <p align="center"><strong>4&ordm; ETAPA ARZUA – ARCA DO PINO – 23 DE JUNIO/2.005 </strong></p>
+  <p align="center"><strong>QUIZ&Aacute;S &Eacute;STA ETAPA HA SIDO LA M&Aacute;S LIVIANA, DESPUES DEL BUEN DESCANSO QUE TUVIMOS, NOS LEVANTAMOS SOBRE LAS 6,30 H. Y COMENZAMOS A CAMINAR, Y&Aacute; DECIDIMOS DESAYUNAR DURANTE EL CAMINO Y TRAS VARIOS KM. UN LUGARE&Ntilde;O SE CRUZA CON NOSOTROS Y NOS RECOMIENDA DESAYUNAR EN EL 2&ordm; BAR, Y MAS SI SOMOS ANDALUCES YA QUE HAY UN BANDERA DEL REAL BETIS EN DICHO LUGAR, MENUDA SORPRESA TEN&Iacute;AMOS GUARDADA PARA NUESTRO CU&Ntilde;ADO EL SEVILLISTA </strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 048.jpg"></strong></p>
+  <p align="center"><strong>EL QUE NO CONOZCA ESTOS LUGARES, NO PODEIS IMAGINAROS, ENCONTRAR ALGO AS&Iacute; POR &Eacute;STOS CAMINOS PERDIDOS, EN DONDE TE ENCUENTRAS UN BAR O POSADA CADA 6 KM. APROX. EN FIN ....</strong><strong></strong></p>
+  <p align="center"><strong>VOLVEMOS A ENCONTRARNOS CON EL GRUPO DE MADRID, CANARIAS Y AUSTRALIA DONDE PARAN A DESAYUNAR TAMBIEN. </strong></p>
+  <p align="center"><strong>SALIMOS DEL BAR Y NOS DISPUSIMOS A CAMINAR OTRA VEZ, CUANDO NOS DIMOS CUENTA ESTABAMOS EN ARCA DO PINO SOBRE LAS 11,15 H. </strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 051.jpg"></strong></p>
+  <p align="center"><strong>ALBERGUE TAMBIEN MUY BUENO, SEPARACIONES ENTRE CAMAS, Y NOS ALOJARON EN UNA, DONDE HAB&Iacute;A UN TRAGALUZ DESDE DONDE SE VISLUMBRABA UN GRAN PAISAJE. DECIDIMOS HACER UNA COLADA DE ROPA Y UTILIZAR DESPUES LA SECADORA COSA QUE LA PRIMERA VEZ NO HICIMOS</strong></p>
+  <p align="center"><strong>MOMENTO DE RELAX EN LAS LITERAS, SUENA EL MOVIL Y MOMENTAZO DE EMOCI&Oacute;N MIENTRAS ESCUCHO A MI MUJER Y A MIS HIJAS, QUE TRAS CINCO DIAS SIN VERLAS ME PARECIERON 20, Y M&Aacute;S CUANDO EMPIEZA A DECIRME QUE HAN RECOGIDO LAS CALIFICACIONES FINALES DEL CURSO, TODO ESTUPENDO Y EL PROFESOR DE LA PATRI ESTABA CONTENT&Iacute;SIMO DE SU RENDIMIENTO ETC. ETC. NO PUDE CONTENERME (Hay cosas que no se pueden controlar) Y ME LLEV&Eacute; COMO DIEZ MINUTOS LLORANDO DE EMOCION </strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 054.jpg"></strong></p>
+  <p align="center"><strong>VENGA VAMOS A COMER </strong></p>
+  <p align="center"><strong>QUEDAMOS PARA COMER Y NOS ATENDI&Oacute; UN SE&Ntilde;OR BASTANTE SERIO, NOS ASIGNA UNA MESA Y NOS SIRVE UNA GALLEGA MUCHO MAS AMABLE, UNA VEZ M&Aacute;S EL ALMUERZO FU&Eacute; INOLVIDABLE QUE PEDAZOS DE PLATOS </strong></p>
+  <p align="center"><strong>&iexcl;OJU COMO SE COME AQU&Iacute; EN GALICIA!. QUEDAMOS MUY SATISFECHOS.</strong><strong></strong></p>
+  <p align="center"><strong>VOLVIMOS AL ALBERGUE</strong><strong></strong></p>
+  <p align="center"><strong>SALIMOS POR LA TARDE AL PUEBLO, HAB&Iacute;A CARTELES DONDE ANUNCIABAN UNA FIESTA Y “SARDI&Ntilde;ADA” GRATIS &quot;POR LA NOCHE DE SAN JUAN&quot;, SOBRE LAS 21,30 NOS DIRIJIMOS A LA PLAZA Y HAB&Iacute;A MONTADO UNAS LARGAS MESAS CON BARRILES DE VINO, AL FONDO UNA ESPECIE DE CHIRINGUITO DONDE ESTABAN PREPARANDO UNOS COSTILLARES DE CARNE, CHISTORRAS, ETC. Y UNA GRAN CANTIDAD DE SARDINAS QUE ESTABAN Y&Aacute; HACIENDOSE SOBRE LA PLANCHA. LA FIESTA PROMET&Iacute;A. </strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 056.jpg"></strong></p>
+  <p align="center"><strong>VARIOS PEREGRINOS SE HAC&Iacute;AN NOTAR POR LA PLAZA. A LAS 22,30 H. EMPIEZAN A REPARTIR SARDINAS Y VASOS DE VINO, </strong></p>
+  <p align="center"><strong>NUESTROS AMIGOS TAMBIEN ESTAN ALLI, SE UNEN LOS GRUPOS, LA VAMOS A LIAR! PERO HAY UN PROBLEMA, SON LAS 22,45 EL ALBERGUE CIERRA A LAS 23:00 H. Y DESPU&Eacute;S NO ENTRA NADIE &iquest;QU&Eacute; HACEMOS? </strong></p>
+  <p align="center">&nbsp;</p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 057.jpg"></strong></p>
+  <p align="center"><strong>EMILIO, ENRIQUE, JULIAN, ERIKA Y LAS DOS AUSTRALIANAS, DECIDEN QUE VAN A POR SUS MOCHILAS Y CUANDO ACABE LA JUERGA SALEN CAMINANDO HACIA SANTIAGO DE COMPOSTELA, CON LINTERNAS SABIENDO QUE MAS DE LA MITAD DEL CAMINO SER&Iacute;A Y&Aacute; POR POL&Iacute;GONOS INDUSTRIALES Y LA CIUDAD DE SANTIAGO. AL FIN Y AL CABO ERA LA &Uacute;LTIMA ETAPA.</strong><strong></strong></p>
+  <p align="center"><strong>NOSOTROS NOS ENCONTRAMOS CON UNA DIF&Iacute;CIL SITUACI&Oacute;N, LO HABLAMOS Y DOS DE LOS CINCO NO LES HACIA GRACIA LA IDEA, INCLUSO YA N&Oacute; DE ANDAR POR LA NOCHE, SINO QUEDARNOS UNAS TRES HORAS POR EL PUEBLO HASTA COMENZAR A CAMINAR SOBRE LAS 5 &oacute; 5:30 h. INSISTIMOS EN QUE DE TODAS FORMAS IBAN A SER UNAS TRES HORAS DE SUE&Ntilde;O QUE MEREC&Iacute;A LA PENA PERDERSELAS POR PASAR UN BUEN RATO, QUE PARA ESO TEN&Iacute;AMOS LOS SACOS DE DORMIR Y ESTO ES LO QUE HAY QUE APROVECHAR DEL CAMINO, SEGUIAN PENSANDO EN LO MISMO DE QUEDARSE EN EL ALBERGUE, EN UN &Uacute;LTIMO ESFUERZO FUIMOS A DIALOGAR CON EL HOSPITALERO BAJANDO OTRA VEZ AL ALBERGUE, N&Oacute; LO ENCONTRAMOS Y LLEGAMOS DESILUSIONADOS A LA PLAZA, DE VUELTA LOS CINCO AL ALBERGUE, YA ESTABA ALL&Iacute; &Eacute;STE HOMBRE Y DIJO QUE EL ALBERGUE QUEDAR&Iacute;A CERRADO DESDE FUERA A LAS 23 H. SEG&Uacute;N NORMAS, AL PREGUNTARLE PARA SALIR TEMPRANO, NOS DIJO QUE SOLO TENDRIAMOS QUE EMPUJAR LA BARRA ANTIP&Aacute;NICO Y CERRAR, N&Oacute; TENIAMOS TIEMPO PARA PENSAR EN M&Aacute;S SOLUCIONES Y SE NOS OCURRI&Oacute; QUE S&Iacute; HAB&Iacute;A DOS QUE NO IBAN A PARARSE EN LA FIESTA QUE CUANDO DI&Eacute;RAMOS UN TOQUE AL M&Oacute;VIL, BAJARAN A ABRIR Y ENTRAR&Iacute;AMOS TODOS ADENTRO. AL FINAL DE LOS DOS QUE SE IBAN A QUEDAR EN EL ALBERGUE, UNO SE APUNTA CON NOSOTROS Y EL OTRO SE SACRIFICA, D&Aacute;NDONOS LA OPORTUNIDAD DE LLAMARLE PARA QUE NOS ABRIERA.</strong><strong></strong></p>
+  <p align="center"><strong>DESPUES DE &Eacute;STA DIFICIL DECISI&Oacute;N, NOS FUIMOS PARA LA PLAZA Y NADA MAS LLEGAR, NOS HACEN UN RECIBIMIENTO EL OTRO GRUPO DE LO MAS SONADO. HACEMOS PI&Ntilde;A Y COMENZAMOS A BEBER Y A COMER DE LO LINDO LA FIESTA SE ANIMA Y COMIENZA EL BAILE, TENEMOS EN EL GRUPO A UNA H&Uacute;NGARA CON UNA TAJ&Aacute; DEL QUINCE BAILANDO CUALQUIER RITMO CON PASES DE BALLET, NOS REIMOS DE LO LINDO, HACEMOS COROS Y BAILES EN RONDO, VIENE UNA CONGA Y HACEMOS UN TREN, LA GENTE SE ENTREGA POR COMPLETO, VIENE LAS RONDAS DE CUBATOIDES, LOS M&Uacute;SICOS SE LO CURRAN SUENAN DE MARAVILLA, VIENE EL DESMADRE C&Aacute;NTICOS DE MUSHO BETIS, MUSHA CANARIA, MUSHO MADRID, MUSHA AUSTRALIA, NOS CONVERTIMOS EN LOS REYES DE LA PISTA, EL MADRILES ES UN CRACK DEL BAILE, SUS SALTOS SON ESPECTACULARES, ATENCI&Oacute;N SE ACERCA UN PERSONAJE BAJITO, CON CARA ORONDA, BARBA, MOFLETES ROSADOS, MIRADA VACILONA MEJOR DICHO CON UN VACIL&Oacute;N DEL QUINCE, UNA MEZCLA ENTRE SUPERMARIO BROSS Y PEPE GOTERA BORRACHO. Y EMPIEZA A MARCARSE UN PASITOS CORTOS ACOMPASADOS CON UN MOVIMIENTO DE MANOS ALTERNOS, ESTILO A&Ntilde;OS 70, PERO A CAMARA LENTA, V&Eacute; AL MADRILES E INTENTA SEGUIR SUS PASOS, NADA MAS ALARGAR UN POCO M&Aacute;S LA PIERNA, PIERDE EL EQUILIBRIO Y CASI SE CAE, LA ESTAMPA ES DESCOJONANTE EL MADRILES NO PUEDE MAS, DEJA DE BAILAR Y NO PARA DE REIRSE, EL COLEGA VACIL&Oacute;N ES AGASAJADO UNA Y OTRA VEZ POR NOSOTROS, ANIM&Aacute;NDOLE A QUE BAILE. LA H&Uacute;NGARA SE PIERDE DE VISTA Y N&Oacute; SABEMOS NADA M&Aacute;S DE ELLA. SEGUIMOS CON MAS CUBATAS. EN LA PLAZA PR&Aacute;CTICAMENTE SOLO QUEDAMOS NOSOTROS, EMPEZAMOS A CANTAR CON EL GRUPO, SE IDENTICA CON NOSOTROS Y NOSOTROS NOS IDENTIFICAMOS CON ELLOS CANTAMOS JUNTOS LA RIANCHEIRA, CANCIONES ACTUALES TELEVISIVAS, NOS DEDICA UNA DE MIGUEL RIOS “Bienvenidos”, OTRA MAS PARA LOS ANDALUCES; MEDINA AZAHARA “NECESITO RESPIRAR” EL DESMADRE ES TOTAL, ESTAMOS AF&Oacute;NICOS, EL GRUPO ACABA, NOSOTROS NO QUEREMOS QUE ACABE, ENPEZAMOS CON EL TIPICO OTRA, OTRA, NOS CANTA DOS MAS, ESTAMOS ABAJO DEL ESCENARIO, LOS SALUDAMOS LES DIMOS LA ENHORABUENA Y LA MUSICA SE ACAB&Oacute;.</strong><strong></strong></p>
+  <p align="center"><strong>ENTRA EN JUEGO OTRO PERSONAJE “JOSE MANUEL” HINCHA DEL ARCA DO PINO ENTABLA CONVERSACI&Oacute;N CON MI CU&Ntilde;ADO PACO “El sevillista” Y LE REGALA UNA BUFANDA QUE TIENE LOS COLORES ROJO Y BLANCO, ESTA VACIL&Oacute;N TAMBIEN, ERA DE ESPERAR.</strong><strong></strong></p>
+  <p align="center"><strong>COMO LA NOCHE SE MEREC&Iacute;A, HICIMOS NUESTRA PROPIA HOGUERA DE SAN JUAN, ZAPATILLAS ROTAS, ROPA, PAPELES, BARAJAS DE CARTAS Y TODO LO QUE NO NOS SERV&Iacute;A FUE AVIVANDO EL FUEGO, EMPEZAMOS A SALTAR POR ENCIMA DE EL, LA SINCRONIZACI&Oacute;N ES PERFECTA, LA FIESTA VA LLEGANDO A SU FIN. SEGUIMOS CON C&Aacute;NTICOS DE UNOS A OTROS, EL HERMANAMIENTO ES TOTAL, LOS INTEGRANTES DEL GRUPO DE M&Uacute;SICA EST&Aacute;N PERPLEJOS, NOS ACERCAMOS A ELLOS Y ESTRECHAMOS NUESTRAS MANOS Y DIMOS SENDOS BESOS A LAS CANTANTES. JOSE MANUEL HINCHA DEL ARCO DO PINO SE OFRECE A INVITARNOS A UNA &Uacute;LTIMA COPA, COSA QUE NO DESAPROVECHAMOS, N&Oacute; SIN TENER DUDAS DE SU LIQUIDEZ PARA PAGAR LA CONVID&Aacute; Y DADO TAMBIEN SU ESTADO DE EUFORIA.</strong><strong></strong></p>
+  <p align="center"><strong>A EMILIO, NO LE HACE GRACIA, SE DISPON&Iacute;A A SALIR CAMINANDO Y&Aacute;, V&Eacute; QUE SE EST&Aacute;N ENROLLANDO M&Aacute;S DE LA CUENTA Y PUEDEN SUFRIR LOS EXCESOS, POR EL CAMINO.</strong><strong></strong></p>
+  <p align="center"><strong>NOSOTROS VAMOS AL DESTROSO Y TEN&Iacute;AMOS LA BAZA DE PODER DORMIR ALGO EN EL ALBERGUE. ENTRE CHARLA Y CHARLA</strong><strong></strong></p>
+  <p align="center"><strong>VUELTA AL ALBERGUE, SON LAS 2,15 H. APROX., LLEGAMOS Y LA PUERTA COMO SE ESPERABA, ESTABA CERRADA, DECIDIMOS ESPERAR UN POCO POR SI ALGUN DESPISTADO SALIA ANTES DE TIEMPO Y NO TENER QUE MOLESTAR A NUESTRO COMPA&Ntilde;ERO, NO SALE NADIE, VENGA VAMOS A LLAMARLO DEC&Iacute;AN UNOS, NO VALE MOLESTARLE DEC&Iacute;AN OTROS, VAMOS A ECHARNOS UN POCO EN ESTE BANCO PASARAN R&Aacute;PIDO &Eacute;STAS 3 HORAS. ALQUIEN TIENE UN SUE&Ntilde;O MUY R&Aacute;PIDO, AL POCO TIEMPO SUS RONQUIDOS SON DESESPERANTES, VAMOS A LA PARTE TRASERA, FRENTE A LAS CUADRAS HAY SITIO, UNOS CARTONES INDICAN QUE Y&Aacute; ANTES, ALGUIEN HAB&Iacute;A DORMIDO ALL&Iacute;, NOS ACURRUCAMOS LOS TRES Y EL CUARTO QUED&Oacute; EN LA PARTE DELANTERA RONCANDO A SU ANCHAS. </strong></p>
+  <p align="center"><strong>NO PAS&Oacute; NI UN CUARTO DE HORA, CUANDO EL DE LOS RONQUIDOS, POR CULPA DEL FRIO SE DESPIERTA Y VA EN NUESTRA BUSCA, UNA LITERNA LE ILUMINA, QUIEN ERES, A LO QUE CONTESTA, MAMONES ME HABEIS DEJADO SOLO, NO TE PREOCUPES HOMBRE (Hace un poco de rasca), ponte aqu&iacute;, MIENTRAS VOY AL PUEBLO HABER SI HAY ABIERTA ALGUNA CAFETERIA o ALGO.</strong><strong></strong></p>
+  <p align="center"><strong>N&Oacute;, N&Oacute;, YO NO ME QUEDO AQU&Iacute;.</strong><strong></strong></p>
+  <p align="center"><strong>MIENTRAS VOY AL PUEBLO, LOS OTROS TRES EMPIEZAN A DARLE VUELTAS A LA CABEZA HABER COMO CO&Ntilde;O PUEDEN ENTRAR EN EL ALBERGUE, VEN UNA VENTANA QUE TRAS LA MISMA HAY UNA HABITACI&Oacute;N CON DOS CAMAS LIBRES, TRAS FORZARLA UN POCO, SE ADENTRAN Y VEN QUE LA PUERTA EST&Aacute; BAJO LLAVE Y NO PUEDEN ACCEDER A LA OTRA PARTE DESDE DONDE SE PODR&Iacute;A ABRIR LA PUERTA DEL ALBERGUE, EN EL PUEBLO NO HAY NADA ABIERTO, UNA VEZ JUNTO LOS CUATRO SE COMENTA LO DE LA HABITACI&Oacute;N, LA PUERTA INTERNA NO SE PUEDE FORZAR &oacute; HAR&Iacute;A MUCHO RUIDO INTERTARLO, DECIDIMOS ENTRAR LOS CUATRO POR LA VENTANA Y COMPARTIR ESAS DOS CAMAS, PENSANDO QUE EL HOSPITALERO COMPRENDER&Iacute;A PORQU&Eacute; ESTAMOS ALL&Iacute; DURMIENDO. AL RATO YA HAB&Iacute;A GENTE DESPIERTA PREPARANDO SUS MOCHILAS Y OTRAS EN LOS BANCOS EXTERIORES, GRACIOSO FU&Eacute; EL SALIR UNO POR UNO POR LA VENTANA Y UN GIRI LEVANTANDO UNA Y OTRA VEZ LA CABEZA PENSANDO &Eacute;STA GENTE QUE EST&Aacute; HACIENDO SALIENDO POR UNA VENTANA. </strong></p>
+  <p align="center"><strong>FINALMENTE PUDIMOS SUBIR Y PREPARAR NUESTRAS MOCHILAS.</strong><strong></strong></p>
+  <p align="center"><strong>PR&Aacute;CTICAMENTE SIN DORMIR COMENZAMOS LA &Uacute;LTIMA ETAPA.</strong><strong></strong></p>
+  <p align="center"><strong>CONTIN&Uacute;A EN EL APARTADO 5&ordf; ETAPA.</strong><strong></strong></p>
+  <p align="center"><strong>(CUALQUIER COMENTARIO SOBRE ESTA ETAPA NO DUDES EN ESCRIBIRME) PULSA SOBRE EL BUZ&Oacute;N. </strong></p>
+</div>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+</body>
+</html>

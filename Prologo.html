@@ -1,0 +1,252 @@
+<html>
+<head>
+<title>www.caminokiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i  ) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i  )
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j  ].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p 1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i  ) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i  ) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i =3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j  ]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i 2];}
+}
+//-->
+</script>
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="blendTrans(Duration=2.0,Transition=18)">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="initiate();MM_preloadImages('images/prologob.gif','images/1etapab.gif','images/2etapab.gif','images/3etapab.gif','images/4etapab.gif','images/5etapab.gif','images/santiagob.gif')">
+<div id="Layer1" style="position:absolute; left:0px; top:0px; width:589px; height:426px; z-index:1"> 
+  <table border="0" cellpadding="0" cellspacing="0" width="1024">
+    <!-- fwtable fwsrc="S0001.png" fwbase="htm.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td><img src="images/spacer.gif" width="72" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="108" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="844" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="1" height="1" border="0"></td>
+    </tr>
+    <tr> 
+      <td colspan="3" background="images/htm_r1_c1.jpg"><div id="Layer3" style="position:absolute; width:200px; height:61px; z-index:3; left: 373px; top: 10px;">
+        <script>
+<!-- Beginning of JavaScript -
+
+
+var message = new Array()
+message[0]="¡HA SIDO TODO            UN HONOR!"
+message[1]="Poder hacer el           camino con"
+message[2]="vosotros, la             experiencia"
+message[3]="es inolvidable           compartamosla"
+message[4]="con nuestros             amigos"
+message[5]="a traves de              nuestra web"
+// Width an height of your TextRotor (pixels).
+var scrollerheight=200
+var scrollerwidth=800
+
+// Edit font
+var font_family="Verdana"
+
+// Edit font-size
+var font_size=30
+
+// The horizontal and vertical position of your TextRotor (pixel)
+var x_textposition=10
+var y_textposition=10
+
+// Do not edit the variables below
+var i_message=0
+var i_loop=0
+var max_loop=45
+var timer
+scrollerwidth=2*scrollerwidth
+y_textposition=y_textposition-scrollerheight font_size
+x_textposition=x_textposition-Math.floor(scrollerwidth/2)
+
+
+function initiate() {
+	if (document.all) {		
+		document.all.rotationstyle.style.posLeft=x_textposition
+		document.all.rotationstyle.style.posTop=y_textposition
+        changemessage()
+	}
+}
+
+function changemessage() {
+		do_rotate="yes"
+		rotationstyle.innerHTML=
+		'<OBJECT ID="rotationobj" CLASSID="CLSID:369303C2-D7AC-11d0-89D5-00A0C90833E6" STYLE="position:relative;width:' scrollerwidth 'px;height:' 2*scrollerheight 'px">' 
+        '<PARAM NAME="Line0001" VALUE="SetLineStyle(0)">' 
+        '<PARAM NAME="Line0002" VALUE="SetLineColor(255,255,255)">' 
+		'<PARAM NAME="Line0003" VALUE="SetFillColor(0,0,255)">' 
+		'<PARAM NAME="Line0004" VALUE="SetFont(\'' font_family '\', ' font_size ', 400, 0, 0, 0)">' 
+		'<PARAM NAME="Line0005" VALUE="Text(\'' message[i_message] '\',0, 2, 0)">' 
+		'</OBJECT>'		
+		rotationobj.Rotate(-90,0,0) 
+		startscroll()
+		
+}
+
+function startscroll() {
+	if (i_loop < max_loop) {
+        rotationobj.Rotate(2,0,0) 
+
+		i_loop  
+		timer=setTimeout("startscroll()",20)
+	}
+   else {
+		i_loop=0
+		timer=setTimeout("endscroll()",2000)
+	}
+}
+
+function endscroll() {
+	if (i_loop < max_loop) {
+        rotationobj.Rotate(-2,0,0) 
+
+		i_loop  
+		timer=setTimeout("endscroll()",50)
+	}
+   else {
+        i_message  
+		i_loop=0
+        if (i_message>=message.length) {i_message=0}
+		timer=setTimeout("changemessage()",1000)
+	}
+}
+
+// - End of JavaScript - -->
+        </script>
+        <span id="rotationstyle" style="position:absolute; left:143px; top:20px">
+        <object id="rotationobj" classid="CLSID:369303C2-D7AC-11d0-89D5-00A0C90833E6" width="14" height="14">
+        </object>
+        </span> <br>
+&nbsp;
+<p></p>
+      </div>
+
+
+
+
+
+      <div id="Layer4" style="position:absolute; width:50px; height:54px; z-index:3; left: 866px; top: 20px;"><img src="images/todos3.gif" width="51" height="56"></div></td>
+      <td><img src="images/spacer.gif" width="1" height="144" border="0"></td>
+    </tr>
+    <tr> 
+      <td rowspan="8"><img name="htm_r2_c1" src="images/htm_r2_c1.jpg" width="72" height="624" border="0"></td>
+      <td><a href="Prologo.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','images/prologob.gif',1)"><img src="images/prologo.gif" alt="PROLOGO DESDE SEVILLA A LUGO" name="Image20" width="108" height="36" border="0"></a></td>
+      <td rowspan="8"><img name="htm_r2_c3" src="images/htm_r2_c31.jpg" width="844" height="624" border="0"></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','images/1etapab.gif',1)"><img src="images/1etapa.gif" alt="1ª ETAPA (DE SARRIA A PORTOMARIN)" name="Image21" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','images/2etapab.gif',1)"><img src="images/2etapa.gif" alt="2ª ETAPA (DE PORTOMARIN A PALAS DE REI)" name="Image22" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','images/3etapab.gif',1)"><img src="images/3etapa.gif" alt="3ª ETAPA (DE PALAS DE REI HATA ARZUA)" name="Image23" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','images/4etapab.gif',1)"><img src="images/4etapa.gif" alt="4ª ETAPA (DE ARZUA HASTA ARCA DO PINO)" name="Image24" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','images/5etapab.gif',1)"><img src="images/5etapa.gif" alt="5ª ETAPA (DE ARCA DO PINO HASTA SANTIAGO)" name="Image25" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="fotos.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','images/santiagob.gif',1)"><img src="images/santiago.gif" alt="(FIN DE FIESTA EN SANTIAGO) se acabó" name="Image26" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td background="images/htm_r9_c2.jpg" bgcolor="#000000"><p align="center">&nbsp;</p>
+        <p align="center"><a href="montajes.html"><img src="images/risa.gif" width="50" height="45" border="0"></a> </p>
+        <p align="center"><a href="mailto:galloso@auna.com"><img src="images/email_014.gif" width="50" height="50" border="0"></a></p>
+      <p align="center"><a href="index.html"><img src="images/inicio.gif" width="50" height="60" border="0"></a></p>
+      <p>&nbsp;</p>      </td>
+      <td><img src="images/spacer.gif" width="1" height="372" border="0"></td>
+    </tr>
+  </table>
+</div>
+<div id="Layer2" style="position:absolute; left:358px; top:155px; width:559px; height:495px; z-index:2; overflow: auto;">
+  <p align="center"><strong>AQU&Iacute; LOS PROTAGONISTAS </strong></p>
+  <p align="center"><strong><img src="images/luisdni.jpg" width="503" height="318"><img width="503" height="318" src="images/pacodni.jpg"></strong></p>
+  <p align="center"><strong><img width="503" height="318" src="images/kikidni.jpg"></strong></p>
+  <p align="center"><strong><img width="503" height="318" src="images/benitodni.jpg"></strong></p>
+  <p align="center"><strong><img width="503" height="318" src="images/carlosdni.jpg"></strong></p>
+  <p align="center"><strong></strong></p>
+  <p align="center"><strong>ANTE LA PROPUESTA DE ORGANIZAR UN PEREGRINAJE POR EL CAMINO DE SANTIAGO, ESTUVIMOS PENS&Aacute;NDOLO DURANTE UN TIEMPO PERO NO DABAMOS CON UNA FECHA ADECUADA, SE TEN&Iacute;AN COMPROMISOS Y SIEMPRE SE LE DABA LARGAS AL ASUNTO, INTENTAMOS EN UN PRIMER LUGAR COGER LA SEMANA DEL 11 AL 18 DE JUNIO TENIENDO EN CUENTA QUE SI SEVILLA O BETIS PASABAN A LA FINAL DE LA COPA DEL REY DEL DIA 12 DE JUNIO TENDR&Iacute;AMOS QUE COGER LA SIGUIENTE SEMANA (AUNQUE EXIST&Iacute;A UN COMPROMISO IMPORTANTE DE UNO DE NOSOTROS QUE NO TEN&Iacute;A CONFIRMADO TODAVIA). LA COSA PAREC&Iacute;A COMPLICADA PERO NOS DECIDIMOS FINALMENTE </strong></p>
+  <p align="center"><strong>EL BETIS FUE PASANDO ELIMINATORIAS Y SE ENCAJA EN LA FINAL, ESTO NOS HIZO ESPERAR HASTA ULTIMA HORA PARA ORGANIZAR TODO EL TEMA. </strong></p>
+  <p align="center"><strong>EN UN PRINCIPIO LA IDEA AL TENER DISPONIBLES SOLO CINCO O SEIS DIAS ERA SALIR DESDE TRIASCASTELA. </strong></p>
+  <p align="center"><strong>(PERSONALMENTE PENS&Eacute; EN SALIR DESDE VILLAFRANCA DEL BIERZO, HACIENDO PREVIAMENTE NOCHE EN PONFERRADA) SALIENDO UN D&Iacute;A ANTES Y SACRIFICANDO UN D&Iacute;A MENOS EN SANTIAGO. </strong></p>
+  <p align="center"><strong>CONSULTADO EL TEMA, SE PREFIERE ESTAR MEJOR DOS DIAS EN SANTIAGO Y TENER ALGUN DIA DE RESERVA POR SI ACASO. </strong></p>
+  <p align="center"><strong>RECOPILANDO INFORMACION A TRAV&Eacute;S DE INTERNET, SE PREPAR&Oacute; UN DOSSIER CON LAS ETAPAS QUE SE TEN&Iacute;AN PREVISTAS, INFORMACI&Oacute;N DE TODO TIPO, OROGRAF&Iacute;A DE ETAPAS, SUS KM., MONUMENTOS A VISITAR DE CADA LOCALIDAD, SUS ALBERGUES ETC. ETC. </strong></p>
+  <p align="center"><strong>Y DECIDIMOS REPARTIRNOS LAS TAREAS DE ORGANIZACI&Oacute;N, MIENTRAS UNOS BUSCABAN ALGUN VUELO ECON&Oacute;MICO (Cosa que ya a &uacute;ltima hora fue imposible), OTROS ORGANIZABAN EL TRAYECTO DE IDA COMO EL TRANSPORTE Y HOSPEDAJE Y OTROS EL HOSPEDAJE UNA VEZ SE LLEGARA A SANTIAGO.</strong><strong></strong></p>
+  <p align="center"><strong>CONSULTANDO EL TEMA DEL TRANSPORTE Y VIENDO LA COMBINACI&Oacute;N TAN MALA PARA LLEGAR A TRIACASTELA COMO PUNTO DE PARTIDA, CAMBIAMOS LOS PLANES Y DECIDIMOS LLEGAR HASTA LUGO PARA PASAR EL DIA COMPLETO Y VISITARLO Y A LA MA&Ntilde;ANA SIGUIENTE DIRIGIRNOS HASTA SARRIA COMO PUNTO DE PARTIDA DEL PEREGRINAJE. </strong></p>
+  <p align="center"><strong>EL TEMA QUEDABA VISTO PARA SENTENCIA (TODOS DE ACUERDO). </strong></p>
+  <p align="center"><strong>VENGA A COMPRAR MOCHILAS Y ACCESORIOS PARA EL CAMINO....... </strong></p>
+  <p align="center">&nbsp;</p>
+  <h3 align="center">DIA 18 DE JUNIO/2.005 </h3>
+  <p align="center"><strong>QUEDAMOS A LAS 9,30 EN CERVECERIA “LOS VAZQUEZ” PARA TOMAR UNAS CERVEZAS ANTES DE DIRIGIRNOS A LA ESTACI&Oacute;N PLAZA DE ARMAS, DONDE SOBRE LAS 23:00 H. NOS MONTAMOS EN UN AUTOCAR QUE CUBR&Iacute;A EL TRAYECTO DE ALGECIRAS HASTA FERROL, NUESTRO DESTINO ERA LUGO. DURANTE ESTE VIAJE PARAMOS EN VARIAS LOCALIDADES, EL VIAJE FUE PESAD&Iacute;SIMO (12 H.)</strong><strong></strong></p>
+  <p align="center"><strong>DIA 19 DE JUNIO/2.005 (llegada a Lugo) </strong></p>
+  <p align="center"><strong>YA DESDE EL MISMO AUTOCAR VIMOS EL HOTEL Y UN POCO M&aacute;S ADELANTE NOS DEJ&Oacute; EN LA ESTACI&Oacute;N QUE ESTABA CERCA. COGIMOS NUESTRAS MOCHILAS Y MIRAMOS LAS POSIBLES SALIDAS DE AUTOBUSES HASTA SARRIA PARA EL DIA SIGUIENTE. </strong></p>
+  <p align="center"><strong>VIMOS QUE EL PRIMERO ERA A LAS 6:45 el 2&ordf; A LAS 8,05 Y EL TERCERO SOBRE LAS 8,30, NOS DECIDIMOS POR COGER EL DE LAS 8,05 POR AQUELLO DEL TERMINO MEDIO. </strong></p>
+  <p align="center"><strong>NOS DIRIGIMOS ANDANDO HASTA EL HOTEL</strong><strong></strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 010.jpg"></strong></p>
+  <p align="center"><strong></strong></p>
+  <p align="center"><strong>LA TEMPERATURA EN LUGO ES IDEAL, NOS PRESENTAMOS EN RECEPCI&Oacute;N CON NUESTRO RESGUARDO DE LA RESERVA CON UN POCO DE INCERTIDUMBRE YA QUE LO QUE COST&Oacute; (132,08.- &euro;) UNA HABITACI&Oacute;N TRIPLE Y OTRA DOBLE EN UN HOTEL DE 4*, HAC&Iacute;A DUDAR POR SI TE LA MET&Iacute;AN POR OTRO LADO O VETE TU A SABER SI HABIA ALGUN ERROR, EST&Aacute; TODO BIEN, NOS ASIGNAN NUESTRAS HABITACIONES Y ORGANIZAMOS NUESTRO EQUIPAJE, LO PRIMERO FU&Eacute; PENSAR QUE PELOTAZO LO DEL HOTEL Y LO SEGUNDO DARNOS UNA DUCHA QUE NOS DEJ&Oacute; COMO NUEVOS TRAS EL PESADO VIAJE. </strong></p>
+  <p align="center"><strong>(DE MOMENTO VA TODO PERFECTO, LA COSA EMPIEZA BIEN). </strong></p>
+  <p align="center"><strong></strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 011.jpg"></strong></p>
+  <p align="center"><strong>QUEDAMOS SOBRE LA 13:00 Y NOS HICIMOS NUESTRAS PRIMERAS FOTOS POR LUGO</strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 012.jpg"></strong></p>
+  <p align="center"><strong>Y POCO A POCO OBSERVAMOS QUE &Eacute;STA CIUDAD PAREC&Iacute;A DESHABITADA, NOS DIRIJIMOS AL CASCO ANTIGUO DONDE HICIMOS UN RECORRIDO POR SUS BARES, EN LOS CUALES NOS OFREC&Iacute;AN UNOS PINCHOS POR CADA BEBIDA QUE SE PED&Iacute;A, PROBAMOS LA SIDRA TIRADA DE BARRIL, ENTABLAMOS CONVERSACI&Oacute;N CON LOS LUGARE&Ntilde;OS, SOBRE TODO DE F&Uacute;TBOL, TEMA CAPARR&Oacute;S COMO ENTRENADOR DEL DPTVO. DE LA CORU&Ntilde;A, ETC., LA MAYOR&Iacute;A DE BARES OFREC&Iacute;AN DEGUSTACIONES DE DIVERSOS LICORES, COSA QUE APROVECHAMOS GUSTASOMENTE. </strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 016.jpg"></strong></p>
+  <p align="center"><strong>UNA VEZ NOS DIMOS CUENTA DE LOS MOFLETES ROJOS QUE LLEV&Aacute;BAMOS (Cosa de la Sidra) y de NUESTRA euforia (Cosa de Alcohol), NOS VOLVIMOS AL HOTEL A PEGARNOS UNA PEDAZO DE SIESTA,</strong><strong></strong></p>
+  <p align="center"><strong>IMAGINARSE COMO NOS PUSIMOS QUE EL QUE LES ESCRIBE, QUED&Oacute; AT&Oacute;NITO ANTE LA ESTAMPA QUE VI&Oacute;, ABRO LOS OJOS Y VEO A MIS DOS HERMANOS EN UNA MISMA CAMA CON EL CALOR QUE ESTABA HACIENDO, LA OTRA CAMA VACIA; ME REFRIEGO LOS OJOS Y SIGO VIENDO LO MISMO, ME QUEDO UN RATO PENSANDO EL PORQU&Eacute;, Y NO ENCUENTRO EXPLICACI&Oacute;N Y NO AGUANTO M&Aacute;S Y EMPIEZO A REIRME, COSA QUE DESPERT&Oacute; A UNO DE ELLOS QUE LEVANTA LA CABEZA Y YO QUE MAS ME RE&Iacute;A, EMPIEZA A MIRAR PARA TODOS LOS LADOS Y SE DA CUENTA DE LA SITUACI&Oacute;N Y ME IMAGINO LO QUE SE LE PAS&Oacute; POR LA CABEZA, COMO HA LLEGADO &Eacute;STE AQU&Iacute;, QUE HACE AQU&Iacute; EN MI CAMA, EN FIN DE PEL&Iacute;CULA LA EXPRESI&Oacute;N DE SU CARA.</strong></p>
+  <p align="center"><strong>(LA VERSI&Oacute;N OFICIAL DEL ASUNTO ES QUE SE LEVANT&Oacute; AL SERVICIO E INCONSCIENTEMENTE SE EQUIVOC&Oacute; DE CAMA) </strong></p>
+  <p align="center"><strong>(LAS FUENTES NO SON MUY FIABLES PERO BUENO...)</strong><strong></strong></p>
+  <p align="center"><strong>VISTO EL TEMA MIENTRAS ARREGLABAN EL ASUNTO, SAL&Iacute; A DAR UN PASEO PARA ESCRIBIR UNA CARTA, COMPRAR ALGUNAS COSILLAS PARA MERENDAR Y FRUTOS SECOS, PENSANDO EN LA PRIMERA ETAPA A RECORRER AL D&Iacute;A SIGUIENTE.</strong><strong></strong></p>
+  <p align="center"><strong>MAS TARDE VOLVIMOS A RECORRER NUMEROSOS BARES DONDE NOS PUSIMOS HASTA EL GORRO DE COMER Y BEBER. </strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 014.jpg"></strong></p>
+  <p align="center"><strong></strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 001.jpg"></strong></p>
+  <p align="center"><strong>LLEGAMOS CANSADOS AL HOTEL Y QUEDAMOS PARA EL D&Iacute;A SIGUIENTE A LAS 7,15 PARA DESAYUNAR EN BAR-CAFETER&Iacute;A EL SEVILLANO (Junto a la Estaci&oacute;n de Autobuses) Y DESPLAZARNOS HASTA SARRIA. (LA MA&Ntilde;ANA SE PRESENTA GRIS), SUBIMOS CON NUESTRA MOCHILA Y RECORRIMOS LOS CASI 25 Km. QUE HABIA DE LUGO A SARRIA. </strong></p>
+  <p align="center"><strong>DIA 20 DE JUNIO/2.005 (Comienza el Camino desde SARRIA) </strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 021.jpg"></strong></p>
+  <p align="center"><strong>PREGUNTAMOS POR EL ALBERGUE PARA QUE NOS SELLARAN LA CREDENCIAL, COMO PUNTO DE PARTIDA DE NUESTRO PEREGRINAJE, SUBIMOS UNA GRAN CUESTA Y AL LLEGAR, NOS LO ENCONTRAMOS CERRADO ABR&Iacute;A SOBRE LAS 13 H. UNOS CARTELES INDICAN HORARIO Y TEL&Eacute;FONO PARA CONSULTAR, NOS DICEN QUE VAYAMOS AL AYUNTAMIENTO, QUE ALL&Iacute; TAMBIEN SELLABAN, MIENTRAS TANTO OTROS PEREGRINOS CONTINUABAN HACIA ARRIBA, NOS LLAM&Oacute; LA ATENCI&Oacute;N UNA SRA. APARENTEMENTE CON UNA MOCHILA PESADA Y UNAS SANDALIAS, SUBIENDO CON MUCHO ESFUERZO LA CUESTA. ANTES DE LLEGAR AL AYUNTAMIENTO, NOS PARAMOS EN UNA TIENDA POR AQUELLO DE PREGUNTAR POR EL BORD&Oacute;N Y LA CONCHA, TAMBIEN TENIAN LAS CREDENCIALES Y TAMBIEN PUDO SELLARNOS LAS NUESTRAS. </strong></p>
+  <p align="center"><strong>A PARTIR DE AQU&Iacute; PODEMOS DECIR QUE EMPEZ&Oacute; EL CAMINO, </strong></p>
+  <p align="center"><strong>CONTIN&Uacute;A EN EL APARTADO 1&ordf; ETAPA. </strong></p>
+  <p align="center"><strong>(CUALQUIER COMENTARIO SOBRE ESTA ETAPA NO DUDES EN ESCRIBIRME) PULSA SOBRE EL BUZ&Oacute;N. </strong></p>
+</div>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+</body>
+</html>

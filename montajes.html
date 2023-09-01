@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>www.caminokiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i  ) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i  )
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j  ].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p 1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i  ) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i  ) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i =3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j  ]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i 2];}
+}
+//-->
+</script>
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="blendTrans(Duration=2.0,Transition=18)">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="initiate();MM_preloadImages('images/prologob.gif','images/1etapab.gif','images/2etapab.gif','images/3etapab.gif','images/4etapab.gif','images/5etapab.gif','images/santiagob.gif')">
+<div id="Layer1" style="position:absolute; left:0px; top:0px; width:589px; height:426px; z-index:1"> 
+  <table border="0" cellpadding="0" cellspacing="0" width="1024">
+    <!-- fwtable fwsrc="S0001.png" fwbase="htm.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td><img src="images/spacer.gif" width="72" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="108" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="844" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="1" height="1" border="0"></td>
+    </tr>
+    <tr> 
+      <td colspan="3" background="images/htm_r1_c1.jpg"><div id="Layer3" style="position:absolute; width:200px; height:61px; z-index:3; left: 373px; top: 10px;">
+        <script>
+<!-- Beginning of JavaScript -
+
+
+var message = new Array()
+message[0]="¡HA SIDO TODO            UN HONOR!"
+message[1]="Poder hacer el           camino con"
+message[2]="vosotros, la             experiencia"
+message[3]="es inolvidable           compartamosla"
+message[4]="con nuestros             amigos"
+message[5]="a traves de              nuestra web"
+
+// Width an height of your TextRotor (pixels).
+var scrollerheight=200
+var scrollerwidth=800
+
+// Edit font
+var font_family="Verdana"
+
+// Edit font-size
+var font_size=30
+
+// The horizontal and vertical position of your TextRotor (pixel)
+var x_textposition=10
+var y_textposition=10
+
+// Do not edit the variables below
+var i_message=0
+var i_loop=0
+var max_loop=45
+var timer
+scrollerwidth=2*scrollerwidth
+y_textposition=y_textposition-scrollerheight font_size
+x_textposition=x_textposition-Math.floor(scrollerwidth/2)
+
+
+function initiate() {
+	if (document.all) {		
+		document.all.rotationstyle.style.posLeft=x_textposition
+		document.all.rotationstyle.style.posTop=y_textposition
+        changemessage()
+	}
+}
+
+function changemessage() {
+		do_rotate="yes"
+		rotationstyle.innerHTML=
+		'<OBJECT ID="rotationobj" CLASSID="CLSID:369303C2-D7AC-11d0-89D5-00A0C90833E6" STYLE="position:relative;width:' scrollerwidth 'px;height:' 2*scrollerheight 'px">' 
+        '<PARAM NAME="Line0001" VALUE="SetLineStyle(0)">' 
+        '<PARAM NAME="Line0002" VALUE="SetLineColor(255,255,255)">' 
+		'<PARAM NAME="Line0003" VALUE="SetFillColor(0,0,255)">' 
+		'<PARAM NAME="Line0004" VALUE="SetFont(\'' font_family '\', ' font_size ', 400, 0, 0, 0)">' 
+		'<PARAM NAME="Line0005" VALUE="Text(\'' message[i_message] '\',0, 2, 0)">' 
+		'</OBJECT>'		
+		rotationobj.Rotate(-90,0,0) 
+		startscroll()
+		
+}
+
+function startscroll() {
+	if (i_loop < max_loop) {
+        rotationobj.Rotate(2,0,0) 
+
+		i_loop  
+		timer=setTimeout("startscroll()",20)
+	}
+   else {
+		i_loop=0
+		timer=setTimeout("endscroll()",2000)
+	}
+}
+
+function endscroll() {
+	if (i_loop < max_loop) {
+        rotationobj.Rotate(-2,0,0) 
+
+		i_loop  
+		timer=setTimeout("endscroll()",50)
+	}
+   else {
+        i_message  
+		i_loop=0
+        if (i_message>=message.length) {i_message=0}
+		timer=setTimeout("changemessage()",1000)
+	}
+}
+
+// - End of JavaScript - -->
+        </script>
+        <span id="rotationstyle" style="position:absolute; left:143px; top:20px">
+        <object id="rotationobj" classid="CLSID:369303C2-D7AC-11d0-89D5-00A0C90833E6" width="14" height="14">
+        </object>
+        </span> <br>
+&nbsp;
+<p></p>
+      </div>
+
+
+
+
+
+      <div id="Layer4" style="position:absolute; width:50px; height:54px; z-index:3; left: 866px; top: 20px;"><img src="images/todos3.gif" width="51" height="56"></div></td>
+      <td><img src="images/spacer.gif" width="1" height="144" border="0"></td>
+    </tr>
+    <tr> 
+      <td rowspan="8"><img name="htm_r2_c1" src="images/htm_r2_c1.jpg" width="72" height="624" border="0"></td>
+      <td><a href="Prologo.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','images/prologob.gif',1)"><img src="images/prologo.gif" alt="PROLOGO DESDE SEVILLA A LUGO" name="Image19" width="108" height="36" border="0"></a></td>
+      <td rowspan="8"><img name="htm_r2_c3" src="images/htm_r2_c31.jpg" width="844" height="624" border="0"></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','images/1etapab.gif',1)"><img src="images/1etapa.gif" alt="1ª ETAPA (DE SARRIA A PORTOMARIN)" name="Image20" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','images/2etapab.gif',1)"><img src="images/2etapa.gif" alt="2ª ETAPA (DE PORTOMARIN A PALAS DE REI)" name="Image21" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','images/3etapab.gif',1)"><img src="images/3etapa.gif" alt="3ª ETAPA (DE PALAS DE REI HASTA ARZUA)" name="Image22" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','images/4etapab.gif',1)"><img src="images/4etapa.gif" alt="4ª ETAPA (DE ARZUA HASTA ARCA DO PINO)" name="Image23" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','images/5etapab.gif',1)"><img src="images/5etapa.gif" alt="5ª ETAPA (DE ARCA DO PINO HASTA SANTIAGO)" name="Image24" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="fotos.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','images/santiagob.gif',1)"><img src="images/santiago.gif" alt="(FIN DE FIESTA EN SANTIAGO) se acabó" name="Image25" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td background="images/htm_r9_c2.jpg" bgcolor="#000000"><p align="center">&nbsp;</p>
+        <p align="center"><a href="montajes.html"><img src="images/risa.gif" width="50" height="45" border="0"></a> </p>
+        <p align="center"><a href="mailto:galloso@auna.com "><img src="images/email_014.gif" width="50" height="50" border="0"></a></p>
+      <p align="center"><a href="index.html"><img src="images/inicio.gif" width="50" height="60" border="0"></a></p>
+      <p>&nbsp;</p>      </td>
+      <td><img src="images/spacer.gif" width="1" height="372" border="0"></td>
+    </tr>
+  </table>
+</div>
+<div id="Layer2" style="position:absolute; left:360px; top:163px; width:555px; height:464px; z-index:2; overflow: scroll;"> 
+  <p><strong>AQU&Iacute; IRE PEGANDO ALGUN QUE OTRO MONTAJE Y OTRAS COSAS GRACIOSAS </strong></p>
+  <p><strong>DE MOMENTO ESTO ES LO QUE HAY (SE IRA INCREMENTANDO)</strong></p>
+  <p><strong>poco a poco </strong></p>
+  <p><strong>TITULO &quot;LO CONSEGUIMOS&quot; &quot;TENEMOS LA COMPOSTELA&quot;</strong></p>
+  <p><strong>
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="137" height="30">
+      <param name="movie" value="images/lopera.swf">
+      <param name="quality" value="high">
+      <embed src="images/lopera.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="137" height="30"></embed>
+    </object>
+</strong><strong><img width="533" height="400" src="images/gladiadoresf.jpg"></strong></p>
+  <p><strong></strong></p>
+  <p>TITULO: &quot;DESDE QUE UTILIZO CHAMPU AL HUEVO MI PELO ES OTRO&quot; </p>
+  <p><strong><img width="500" height="600" src="images/6584f.jpg"></strong></p>
+  <p>TITULO &quot;QUE PASA TRONCO&quot; &quot;UN CANI EN PINO MONTANO&quot; </p>
+  <p><strong><img width="532" height="550" src="images/kikipeluca.jpg"></strong></p>
+  <p><strong>PALO DEL KIKI SOMETIDO A DEBATE EN EL GRAN CONSEJO </strong></p>
+  <p><strong>DE LOS CABALLEROS.</strong></p>
+  <p><strong><img width="532" height="346" src="images/palo3f.jpg"></strong></p>
+  <p><strong>TITULO &quot;CUUU&Ntilde;AAAOOOOO&quot; </strong></p>
+  <p><strong>&iexcl;LOCOOO, EL BETIS A GANAO LA COPA DEL REY-Y-Y-Y-Y-Y-Y!</strong></p>
+  <p><strong>
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="128" height="27">
+      <param name="movie" value="images/cu&ntilde;aoo.swf">
+      <param name="quality" value="high">
+      <embed src="images/cuñaoo.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="128" height="27"></embed>
+    </object>
+</strong><strong><img src="images/copa0722.jpg" width="532" height="399"></strong></p>
+  <p>&nbsp;</p>
+</div>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+</body>
+</html>

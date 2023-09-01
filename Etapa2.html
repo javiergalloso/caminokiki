@@ -1,0 +1,242 @@
+<html>
+<head>
+<title>www.caminokiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i  ) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i  )
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j  ].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p 1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i  ) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i  ) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i =3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j  ]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i 2];}
+}
+//-->
+</script>
+  <META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="blendTrans(Duration=2.0,Transition=18)">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="initiate();MM_preloadImages('images/1etapab.gif','images/2etapab.gif','images/3etapab.gif','images/4etapab.gif','images/5etapab.gif','images/santiagob.gif','images/prologob.gif')">
+<div id="Layer1" style="position:absolute; left:0px; top:0px; width:589px; height:426px; z-index:1"> 
+  <table border="0" cellpadding="0" cellspacing="0" width="1024">
+    <!-- fwtable fwsrc="S0001.png" fwbase="htm.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td><img src="images/spacer.gif" width="72" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="108" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="844" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="1" height="1" border="0"></td>
+    </tr>
+    <tr> 
+      <td colspan="3" background="images/htm_r1_c1.jpg"><div id="Layer3" style="position:absolute; width:200px; height:61px; z-index:3; left: 373px; top: 10px;">
+        <script>
+<!-- Beginning of JavaScript -
+
+
+var message = new Array()
+message[0]="¡HA SIDO TODO            UN HONOR!"
+message[1]="Poder hacer el           camino con"
+message[2]="vosotros, la             experiencia"
+message[3]="es inolvidable           compartamosla"
+message[4]="con nuestros             amigos"
+message[5]="a traves de              nuestra web"
+// Width an height of your TextRotor (pixels).
+var scrollerheight=200
+var scrollerwidth=800
+
+// Edit font
+var font_family="Verdana"
+
+// Edit font-size
+var font_size=30
+
+// The horizontal and vertical position of your TextRotor (pixel)
+var x_textposition=10
+var y_textposition=10
+
+// Do not edit the variables below
+var i_message=0
+var i_loop=0
+var max_loop=45
+var timer
+scrollerwidth=2*scrollerwidth
+y_textposition=y_textposition-scrollerheight font_size
+x_textposition=x_textposition-Math.floor(scrollerwidth/2)
+
+
+function initiate() {
+	if (document.all) {		
+		document.all.rotationstyle.style.posLeft=x_textposition
+		document.all.rotationstyle.style.posTop=y_textposition
+        changemessage()
+	}
+}
+
+function changemessage() {
+		do_rotate="yes"
+		rotationstyle.innerHTML=
+		'<OBJECT ID="rotationobj" CLASSID="CLSID:369303C2-D7AC-11d0-89D5-00A0C90833E6" STYLE="position:relative;width:' scrollerwidth 'px;height:' 2*scrollerheight 'px">' 
+        '<PARAM NAME="Line0001" VALUE="SetLineStyle(0)">' 
+        '<PARAM NAME="Line0002" VALUE="SetLineColor(255,255,255)">' 
+		'<PARAM NAME="Line0003" VALUE="SetFillColor(0,0,255)">' 
+		'<PARAM NAME="Line0004" VALUE="SetFont(\'' font_family '\', ' font_size ', 400, 0, 0, 0)">' 
+		'<PARAM NAME="Line0005" VALUE="Text(\'' message[i_message] '\',0, 2, 0)">' 
+		'</OBJECT>'		
+		rotationobj.Rotate(-90,0,0) 
+		startscroll()
+		
+}
+
+function startscroll() {
+	if (i_loop < max_loop) {
+        rotationobj.Rotate(2,0,0) 
+
+		i_loop  
+		timer=setTimeout("startscroll()",20)
+	}
+   else {
+		i_loop=0
+		timer=setTimeout("endscroll()",2000)
+	}
+}
+
+function endscroll() {
+	if (i_loop < max_loop) {
+        rotationobj.Rotate(-2,0,0) 
+
+		i_loop  
+		timer=setTimeout("endscroll()",50)
+	}
+   else {
+        i_message  
+		i_loop=0
+        if (i_message>=message.length) {i_message=0}
+		timer=setTimeout("changemessage()",1000)
+	}
+}
+
+// - End of JavaScript - -->
+        </script>
+        <span id="rotationstyle" style="position:absolute; left:143px; top:20px">
+        <object id="rotationobj" classid="CLSID:369303C2-D7AC-11d0-89D5-00A0C90833E6" width="14" height="14">
+        </object>
+        </span> <br>
+&nbsp;
+<p></p>
+      </div>
+
+
+
+
+
+      <div id="Layer4" style="position:absolute; width:50px; height:54px; z-index:3; left: 866px; top: 20px;"><img src="images/todos3.gif" width="51" height="56"></div></td>
+      <td><img src="images/spacer.gif" width="1" height="144" border="0"></td>
+    </tr>
+    <tr> 
+      <td rowspan="8"><img name="htm_r2_c1" src="images/htm_r2_c1.jpg" width="72" height="624" border="0"></td>
+      <td><a href="Prologo.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','images/prologob.gif',1)"><img src="images/prologo.gif" alt="PROLOGO DESDE SEVILLA A LUGO" name="Image22" width="108" height="36" border="0"></a></td>
+      <td rowspan="8"><img name="htm_r2_c3" src="images/htm_r2_c31.jpg" width="844" height="624" border="0"></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','images/1etapab.gif',1)"><img src="images/1etapa.gif" alt="1ª ETAPA (DE SARRIA A PORTOMARIN)" name="Image23" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','images/2etapab.gif',1)"><img src="images/2etapa.gif" alt="2ª ETAPA (DE PORTOMARIN A PALAS DE REI)" name="Image24" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','images/3etapab.gif',1)"><img src="images/3etapa.gif" alt="3ª ETAPA (DE PALAS DE REI HASTA ARZUA)" name="Image25" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','images/4etapab.gif',1)"><img src="images/4etapa.gif" alt="4ª ETAPA (DE ARZUA HASTA ARCA DO PINO)" name="Image26" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','images/5etapab.gif',1)"><img src="images/5etapa.gif" alt="5ª ETAPA (DE ARCA DO PINO HASTA SANTIAGO)" name="Image27" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="fotos.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','images/santiagob.gif',1)"><img src="images/santiago.gif" alt="(FIN DE FIESTA EN SANTIAGO) se acabó" name="Image28" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td background="images/htm_r9_c2.jpg" bgcolor="#000000"><p align="center">&nbsp;</p>
+        <p align="center"><a href="montajes.html"><img src="images/risa.gif" width="50" height="45" border="0"></a> </p>
+        <p align="center"><a href="mailto:galloso@auna.com"><img src="images/email_014.gif" width="50" height="50" border="0"></a></p>
+      <p align="center"><a href="index.html"><img src="images/inicio.gif" width="50" height="60" border="0"></a></p>
+      <p>&nbsp;</p>      </td>
+      <td><img src="images/spacer.gif" width="1" height="372" border="0"></td>
+    </tr>
+  </table>
+</div>
+<div id="Layer2" style="position:absolute; left:358px; top:156px; width:560px; height:494px; z-index:2; overflow: auto;">
+  <p align="center"><strong>2&ordf; ETAPA – PORTOMARIN – PALAS DE REI km. (21 DE JUNIO/2.005) </strong></p>
+  <p align="center"><strong>LA NOCHE FUE MOVIDA, UNO DE GIRONA ENCIENDE LA LUZ A LA 5,30 DE LA MA&Ntilde;ANA, EMPIEZA EL MOVIMIENTO DE BOLSAS Y MOCHILAS, UNA ALEMANA VUELVE A ENCENDER A LAS 6, LA APAGAN LA VUELVE A ENCENDER ASI HASTA 4 VECES, LA ALEMANA NOS SALPICA DE SALIBA A TODOS, DE LO QUE EMPEZ&Oacute; A DECIR POR ESA BOQUITA, A PARTIR DE AQU&Iacute; FUE LA “GUTENABEN” QUEDAMOS A LAS 7,15 Y PARAMOS EN EL MISMO PUEBLO A DESAYUNAR, CUANDO NOS DIMOS CUENTA, PR&Aacute;CTICAMENTE HAB&Iacute;AN SALIDO CASI TODOS LOS PEREGRINOS. (A EXCEPCI&Oacute;N DE UNA PAREJITA...)</strong><strong></strong></p>
+  <p align="center"><strong>NOS TOMAMOS CON CALMA LA ETAPA, A SALIR DEL PUEBLO NOS DIRIJIMOS OTRA VEZ AL EMBALSE Y LO CRUZAMOS PERO &Eacute;STA VEZ POR UN PUENTE BASTANTE ESTRECHO CON FINA CHAPA EN EL SUELO QUE APARENTABA SER POCO SEGURO. NOS ENCONTRAMOS CON UNA PENDIENTE. SEGUIMOS SUBIENDO Y PR&Aacute;CTICAMENTE LA ETAPA SE DESARROLLA AL LADO DE LA CARRETERA, POSIBLEMENTE &Eacute;STA PUDO SER LA ETAPA M&Aacute;S FEA EN CUANTO A PAISAJE </strong></p>
+  <p align="center"><strong>HABIAMOS LEIDO LAS CARACTERISTICAS DE ESTA ETAPA Y NOS AVISABA DE UNA SUBIDA EN EL ALTO DE LIGONDE, LA MA&Ntilde;ANA EST&Aacute; GRIS Y AL LLEGAR A &Eacute;STE ALTO APARACE UN POCO DE NIEBLA, CUANDO NOS DIMOS CUENTA YA HAB&Iacute;AMOS SUBIDO Y N&Oacute; TUVIMOS NINGUNA DIFICULTAD EN &Eacute;STA ETAPA.</strong><strong></strong></p>
+  <p align="center"><strong>AL LLEGAR AL ALBERGUE TUVIMOS LA SUERTE DE QUE QUEDARAN 8 CAMAS LIBRES SOLAMENTE Y ADEM&Aacute;S PUDIMOS COGERLAS CONTIGUAS ES DECIR 3 LITERAS JUNTAS EN UNA HABITACI&Oacute;N Y OTRAS DOS EN OTRA. </strong></p>
+  <p align="center"><strong>EL ALBERGUE NO SE PARECE EN NADA AL ANTERIOR, SON UNAS HABITACIONES DE 10 LITERAS CADA UNA CON SUS TAQUILLAS CORRESPONDIENTES, VOLVEMOS A COINCIDIR CON LOS MADRILE&Ntilde;OS, EMILIO Y ENRIQUE, ERIKA Y JULIAN DE CANARIAS, LAS DOS AUSTRALIANAS Y ALGUNOS M&Aacute;S QUE N&Oacute; CONOC&Iacute;AMOS SUFICIENTEMENTE, &Eacute;STE ALBERGUE DISPON&Iacute;A DE LAVADORA Y SECADORA, DECIDIMOS DUCHARNOS R&Aacute;PIDAMENTE Y QUEDAR PARA COMER, PARA DESPUES PARARNOS A LAVAR LA ROPA.</strong><strong></strong></p>
+  <p align="center"><strong>EL ALMUERZO TRAS UNA ESPERA, FU&Eacute; BASTANTE BUENO COMO V&Aacute; SIENDO HABITUAL. </strong></p>
+  <p align="center"><strong>DESPU&Eacute;S UN POCO DE SIESTA. </strong></p>
+  <p align="center"><strong>NO PUDE CONCILIAR EL SUE&Ntilde;O Y BAJ&Eacute; AL SAL&Oacute;N A ESTUDIAR LA PR&Oacute;XIMA ETAPA (3&ordf;) Y DECIDIR SOBRE LA (4&ordf;) YA QUE DESPU&Eacute;S DE RECORRER LAS DOS PRIMERAS, HAB&Iacute;AN DUDAS SOBRE QUE HACER.</strong><strong></strong></p>
+  <p align="center"><strong>ANTES DE NUESTRA AVENTURA PARA LA 4&ordf; ETAPA TEN&Iacute;AMOS DOS OPCIONES: </strong></p>
+  <p align="center"><strong>ARZUA–ARCA DO PINO (24 Km.) &oacute; ARZUA-MONTE DE GOZO (35 Km. Aprox.)</strong><strong></strong></p>
+  <p align="center"><strong>DURANTE &Eacute;STAS DOS PRIMERAS ETAPAS, ESTUVIMOS BARAJANDO AMBAS POSIBILIDADES, MIENTRAS UNOS QUER&Iacute;AN LLEGAR HASTA MONTE DE GOZO OTROS VE&Iacute;AN LA ETAPA DEMASIADA LARGA. </strong></p>
+  <p align="center"><strong>PARA LA 3&ordf; SAB&Iacute;AMOS QUE ERA MUY LARGA Y ROMPEPIERNAS Y QUE SEGURAMENTE N&Oacute; LLEGAR&Iacute;AMOS A TIEMPO PARA COGER CAMA EN EL ALBERGUE (Por culpa del trasnocheo, cubatas etc.), POR LO QUE TENDR&Iacute;AMOS QUE IRNOS A UN HOSTAL (QUE A MITAD DE CAMINO PODR&Iacute;A VENIR MUY BIEN PARA DESCANSAR COMO DIOS MANDA Y RECUPERAR FUERZAS).</strong><strong></strong></p>
+  <p align="center"><strong>Y HABLANDO DE FUERZAS QUEDABA POR DECIDIR LO DE LA 4&ordf; ETAPA, A TODO &Eacute;STO BAJA PACO AL SAL&Oacute;N Y SE UNE AL TEMA.</strong><strong></strong></p>
+  <p align="center"><strong>LAS COSAS ESTAN PLANTEADAS AS&Iacute;. </strong></p>
+  <p align="center"><strong>- LLEGAR HASTA MONTE DE GOZO </strong></p>
+  <p align="center"><strong>VENTAJAS: GRAN COMPLEJO, CAMPING, MUCHAS COMODIDADES </strong></p>
+  <p align="center"><strong>(HABLABAN MUY BIEN DE ESTO) </strong></p>
+  <p align="center"><strong>AFRONTAR LA &Uacute;LTIMA ETAPA MUY CERCA DE SANTIAGO</strong><strong></strong></p>
+  <p align="center"><strong>DESVENTAJAS: ETAPA MUY LARGA (35 Km. Aprox.) </strong></p>
+  <p align="center">&nbsp;</p>
+  <p align="center"><strong>- LLEGAR HASTA ARCA DO PINO: </strong></p>
+  <p align="center"><strong>VENTAJAS: ETAPA MAS LIVIANA (23 Km.) </strong></p>
+  <p align="center"><strong>DESVENTAJAS: ALBERGUE CON MENOS PLAZAS QUE MONTE DO GOZO </strong></p>
+  <p align="center"><strong>AFRONTAR LA ULTIMA ETAPA UN POCO MAS LEJOS. </strong></p>
+  <p align="center"><strong>PENSANDO EN TODOS LOS ASPECTOS, DECIDIMOS POR LLEGAR S&Oacute;LO HASTA ARCA DO PINO, Y&Aacute; QUE COMO PODER SE POD&Iacute;A LLEGAR HASTA MONTE DO GOZO, PERO QUIZ&Aacute;S SE PAGAR&Iacute;A CON UN ESFUERZO MUY ALTO, SUFRI&Eacute;NDOLO ALGUNOS M&Aacute;S QUE OTROS Y NO MEREC&Iacute;A LA PENA, NO SE TRATABA DE UNA COMPETICI&Oacute;N, SE TRATABA DE UN GRUPO Y DE LLEGAR JUNTOS A TODOS LOS SITIOS, DISFRUTANDO DEL CAMINO. </strong></p>
+  <p align="center"><strong>AS&Iacute; LO ACORDAMOS Y POR LA TARDE DIMOS UN GARBEO POR &Eacute;STE PUEBLO QUE REALMENTE NO ERA DEMASIADO BONITO, HAB&Iacute;A POCAS COSAS QUE VER. </strong></p>
+  <p align="center"><strong>ALGUNA QUE OTRA FOTO </strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 033.jpg"></strong></p>
+  <p align="center"><strong></strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 034.jpg"></strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 035.jpg"></strong></p>
+  <p align="center"><strong>PR&Aacute;CTICAMENTE DE LOS TRES BARES QUE HAB&Iacute;A S&Oacute;LO MEREC&Iacute;A LA PENA UNO (Tipo Restaurante-Bar de Copas), DONDE TRAS UNA ESTUPENDA CENA </strong></p>
+  <p align="center"><strong>TUVIMOS UNA NOCHE MUY ACOGEDORA, LA MAYOR&Iacute;A DE LOS PEREGRINOS FUERON A DORMIR, NOSOTROS COMO SIEMPRE LOS &Uacute;LTIMOS, NOS TOMAMOS UNOS CUANTOS CUBATOIDES, EST&Aacute;BAMOS AGUST&Iacute;SIMOS, EMILIO SE UNE AL GRUPO, VAMOS COGIENDO FAMA DE JUERGUISTAS, EMILIO NOS CUENTA SU VIDA, NOS EMPAPAMOS DE SUS EXPERIENCIAS SOBRE EL CAMINO, ERA LA 2&ordf; o 3&ordf; VEZ QUE LO HAC&Iacute;A, COMENZ&Oacute; HACE BASTANTES D&Iacute;AS DESDE RONCESVALLES, SU ASPECTO DEJABA QUE DESEAR, PERO POSE&Iacute;A UNA GRAN CULTURA, HABLANDO CON NOSOTROS, DEC&Iacute;A ENCONTRARSE EN PLAN “BUC&Oacute;LICO” (M&aacute;s tarde nos enteramos de su significado) en t&eacute;rminos campestres como sentirse el pastor de un reba&ntilde;o de ovejas. </strong></p>
+  <p align="center"><strong>HABLANDO, HABLANDO CASI NO NOS DAMOS CUENTA DE QUE EL ALBERGUE IBA A CERRAR YA. </strong></p>
+  <p align="center"><strong>QUEDAMOS PARA EL DIA SIGUIENTE SOBRE LA 6,30 (poco a poco ibamos cogiendo la costumbre de los otros peregrinos) </strong></p>
+  <p align="center"><strong>M&aacute;s que nada por evitar horas de sol y llegar a buena hora a los albergues. </strong></p>
+  <p align="center"><strong>CONTIN&Uacute;A EN EL APARTADO 3&ordf; ETAPA. </strong></p>
+  <p align="center"><strong>(CUALQUIER COMENTARIO SOBRE ESTA ETAPA NO DUDES EN ESCRIBIRME) PULSA SOBRE EL BUZON. </strong></p>
+</div>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+</body>
+</html>

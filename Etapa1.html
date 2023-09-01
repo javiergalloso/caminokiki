@@ -1,0 +1,238 @@
+<html>
+<head>
+<title>www.caminokiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i  ) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i  )
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j  ].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p 1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i  ) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i  ) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i =3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j  ]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i 2];}
+}
+//-->
+</script>
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<meta http-equiv="Page-Exit" content="blendTrans(Duration=2.0,Transition=18)">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="initiate();MM_preloadImages('images/prologob.gif','images/1etapab.gif','images/2etapab.gif','images/3etapab.gif','images/4etapab.gif','images/5etapab.gif','images/santiagob.gif')">
+<div id="Layer1" style="position:absolute; left:0px; top:0px; width:589px; height:426px; z-index:1"> 
+  <table border="0" cellpadding="0" cellspacing="0" width="1024">
+    <!-- fwtable fwsrc="S0001.png" fwbase="htm.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td><img src="images/spacer.gif" width="72" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="108" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="844" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" width="1" height="1" border="0"></td>
+    </tr>
+    <tr> 
+      <td colspan="3" background="images/htm_r1_c1.jpg"><div id="Layer3" style="position:absolute; width:200px; height:61px; z-index:3; left: 373px; top: 10px;">
+        <script>
+<!-- Beginning of JavaScript -
+
+
+var message = new Array()
+message[0]="¡HA SIDO TODO            UN HONOR!"
+message[1]="Poder hacer el           camino con"
+message[2]="vosotros, la             experiencia"
+message[3]="es inolvidable           compartamosla"
+message[4]="con nuestros             amigos"
+message[5]="a traves de              nuestra web"
+
+// Width an height of your TextRotor (pixels).
+var scrollerheight=200
+var scrollerwidth=800
+
+// Edit font
+var font_family="Verdana"
+
+// Edit font-size
+var font_size=30
+
+// The horizontal and vertical position of your TextRotor (pixel)
+var x_textposition=10
+var y_textposition=10
+
+// Do not edit the variables below
+var i_message=0
+var i_loop=0
+var max_loop=45
+var timer
+scrollerwidth=2*scrollerwidth
+y_textposition=y_textposition-scrollerheight font_size
+x_textposition=x_textposition-Math.floor(scrollerwidth/2)
+
+
+function initiate() {
+	if (document.all) {		
+		document.all.rotationstyle.style.posLeft=x_textposition
+		document.all.rotationstyle.style.posTop=y_textposition
+        changemessage()
+	}
+}
+
+function changemessage() {
+		do_rotate="yes"
+		rotationstyle.innerHTML=
+		'<OBJECT ID="rotationobj" CLASSID="CLSID:369303C2-D7AC-11d0-89D5-00A0C90833E6" STYLE="position:relative;width:' scrollerwidth 'px;height:' 2*scrollerheight 'px">' 
+        '<PARAM NAME="Line0001" VALUE="SetLineStyle(0)">' 
+        '<PARAM NAME="Line0002" VALUE="SetLineColor(255,255,255)">' 
+		'<PARAM NAME="Line0003" VALUE="SetFillColor(0,0,255)">' 
+		'<PARAM NAME="Line0004" VALUE="SetFont(\'' font_family '\', ' font_size ', 400, 0, 0, 0)">' 
+		'<PARAM NAME="Line0005" VALUE="Text(\'' message[i_message] '\',0, 2, 0)">' 
+		'</OBJECT>'		
+		rotationobj.Rotate(-90,0,0) 
+		startscroll()
+		
+}
+
+function startscroll() {
+	if (i_loop < max_loop) {
+        rotationobj.Rotate(2,0,0) 
+
+		i_loop  
+		timer=setTimeout("startscroll()",20)
+	}
+   else {
+		i_loop=0
+		timer=setTimeout("endscroll()",2000)
+	}
+}
+
+function endscroll() {
+	if (i_loop < max_loop) {
+        rotationobj.Rotate(-2,0,0) 
+
+		i_loop  
+		timer=setTimeout("endscroll()",50)
+	}
+   else {
+        i_message  
+		i_loop=0
+        if (i_message>=message.length) {i_message=0}
+		timer=setTimeout("changemessage()",1000)
+	}
+}
+
+// - End of JavaScript - -->
+        </script>
+        <span id="rotationstyle" style="position:absolute; left:143px; top:20px">
+        <object id="rotationobj" classid="CLSID:369303C2-D7AC-11d0-89D5-00A0C90833E6" width="14" height="14">
+        </object>
+        </span> <br>
+&nbsp;
+<p></p>
+      </div>
+
+
+
+
+
+      <div id="Layer4" style="position:absolute; width:50px; height:54px; z-index:3; left: 866px; top: 20px;"><img src="images/todos3.gif" width="51" height="56"></div></td>
+      <td><img src="images/spacer.gif" width="1" height="144" border="0"></td>
+    </tr>
+    <tr> 
+      <td rowspan="8"><img name="htm_r2_c1" src="images/htm_r2_c1.jpg" width="72" height="624" border="0"></td>
+      <td><a href="Prologo.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','images/prologob.gif',1)"><img src="images/prologo.gif" alt="PROLOGO DESDE SEVILLA A LUGO" name="Image29" width="108" height="36" border="0"></a></td>
+      <td rowspan="8"><img name="htm_r2_c3" src="images/htm_r2_c31.jpg" width="844" height="624" border="0"></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','images/1etapab.gif',1)"><img src="images/1etapa.gif" alt="1ª ETAPA (DE SARRIA A PORTOMARIN)" name="Image30" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image31','','images/2etapab.gif',1)"><img src="images/2etapa.gif" alt="2ª ETAPA (DE PORTOMARIN A PALAS DE REI)" name="Image31" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','images/3etapab.gif',1)"><img src="images/3etapa.gif" alt="3ª ETAPA (DE PALAS DE REI HASTA ARZUA)" name="Image32" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','images/4etapab.gif',1)"><img src="images/4etapa.gif" alt="4ª ETAPA (DE ARZUA HASTA ARCA DO PINO)" name="Image33" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="Etapa5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','images/5etapab.gif',1)"><img src="images/5etapa.gif" alt="5ª ETAPA (DE ARCA DO PINO HASTA SANTIAGO)" name="Image34" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td><a href="fotos.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image35','','images/santiagob.gif',1)"><img src="images/santiago.gif" alt="(FIN DE FIESTA EN SANTIAGO) se acabó" name="Image35" width="108" height="36" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="36" border="0"></td>
+    </tr>
+    <tr> 
+      <td background="images/htm_r9_c2.jpg" bgcolor="#000000"><p align="center">&nbsp;</p>
+        <p align="center"><a href="montajes.html"><img src="images/risa.gif" width="50" height="45" border="0"></a> </p>
+        <p align="center"><a href="mailto:galloso@auna.com"><img src="images/email_014.gif" width="50" height="50" border="0"></a></p>
+      <p align="center"><a href="index.htm"><img src="images/inicio.gif" width="50" height="60" border="0"></a></p>
+      <p>&nbsp;</p>      </td>
+      <td><img src="images/spacer.gif" width="1" height="372" border="0"></td>
+    </tr>
+  </table>
+</div>
+<div id="Layer2" style="position:absolute; left:357px; top:157px; width:562px; height:493px; z-index:2; overflow: auto;">
+  <p align="center"><strong>1&ordf; ETAPA – SARRIA – PORTOMARIN – 22 Km. Aprox. (20 DE JUNIO/2.005) </strong></p>
+  <p align="center"><strong></strong></p>
+  <p align="center"><strong>DESDE EL ALBERGUE LLEGAMOS AL ALTO DE LA CUESTA Y NOS ENCONTRAMOS CON UN CEMENTERIO A NUESTRA DCHA. COMIENZA LA AVENTURA SOBRE LAS 9:30 H. </strong></p>
+  <p align="center"><strong></strong></p>
+  <p align="center"><strong>DESPUES DE LA CUESTA NOS ENCONTRAMOS CON UNA BAJADA MUY PRONUNCIADA, EMPEZAMOS A ENCONTRARNOS PEREGRINOS DE DIFERENTES NACIONALIDADES ANDUVIMOS POR UN SENDERO PEGADO A LA VIA DEL TREN. </strong></p>
+  <p align="center"><strong>IBAMOS DISFRUTANDO DEL PRECIOSO PAISAJE QUE A NUESTROS OJOS SE PRESENTABA </strong></p>
+  <p align="center"><strong>EL CAMINO COMIENZA A PONERSE ABRUPTO, PUENTECITOS SOBRE CHARCAS, PIEDRAS MOJADAS, COMIENZA A MOLESTAR LA MOCHILA</strong></p>
+  <p align="center"><strong></strong></p>
+  <p align="center"><strong></strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 022.jpg"></strong></p>
+  <p align="center"><strong>IBAMOS ALTERNANDO ENTRE CARRETERA Y CAMINO DE ARBOLEDAS Y RIACHUELOS, NOS ENCONTRAMOS CON UNAS VACAS QUE IBAN O VEN&Iacute;AN DE PASTAR Y ESTUVIMOS CAMINANDO ENTRE ELLAS UN RATO </strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 023.jpg"></strong></p>
+  <p align="center"><strong></strong></p>
+  <p align="center"><strong>EL AGUA QUE LLEVAMOS SE ACABA, PREGUNTAMOS DONDE PODER LLENAR NUESTRA CANTIMPLORA Y NOS DICEN QUE MAS ADELANTE HAY UNA FUENTE, SEDIENTOS LLEGAMOS A LA MISMA NO SIN PARECERNOS QUE N&Oacute; LLEG&Aacute;BAMOS NUNCA, BEBIMOS, RECARGAMOS PILAS Y CONTINUAMOS NUESTRA MARCHA, AL CABO DE UN PAR DE Km. COMENZAMOS A TENER UN POCO DE HAMBRE Y NO APAREC&Iacute;A NINGUN BAR, POSADA O LO QUE SEA PARA COMER UN POCO, ENTONCES NOS ACORDAMOS DE QUE EN LUGO COMPRAMOS ALGO DE FRUTO SECOS, SACAMOS UNAS PIPAS Y UNAS AVELLANAS PELADAS, COMIENZA UN PAR DE BAJADAS Y SUBIDAS NO MUY PRONUNCIADAS PERO CON EL TERRENO EN MALAS CONDICIONES, FALTANDO UNOS 9 KM. PARA LLEGAR A PORTOMAR&Iacute;N, NOS ENCONTRAMOS CON UNA POSADA, DUDAMOS ENTRE PARARNOS o CONTINUAR, QUEDABA POCO; PARAR SUPON&Iacute;A ENFRIARSE, Y CUESTA ARRANCAR, POR OTRO LADO TOMAR UN REFRESCO Y COMER ALGO ERA TENTADOR, NOS DECIDIMOS POR ESTO &Uacute;LTIMO </strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 025.jpg"></strong></p>
+  <p align="center"><strong>Y TRAS PEDIR UNAS CERVEZAS Y REFRESCOS, PEDIMOS UNA EMPANADA PARA 4 Y UN BOCATA DE TORTILLA FRANCESA CALENTITO QUE GUSTOSAMENTE OFRECI, YO SOLO SEGURAMENTE NO ME LO HUBIERA COMIDO, EN LA FOTO NO SE APRECIA BIEN PERO ERA BASTANTE GRANDE. </strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 026.jpg"></strong></p>
+  <p align="center"><strong>TRAS ESTA BUENA PARADA, EL SOL EMPIEZA A ASOMAR Y A APRETAR DE LO LINDO, NOS COMENTABA EL SE&Ntilde;OR DE LA POSADA QUE NO RECORDABAN UN TIEMPO TAN SECO COMO &Eacute;STE EN LUGO DESDE HAC&Iacute;A BASTANTE TIEMPO, POR DELANTE NOS QUEDA 9 Km., “EMBUCHADOS” COMENZAMOS DE NUEVO LA CAMINATA Y CONTINUAMOS POR CARRETERA; EL &Uacute;LTIMO TRAYECTO SE HACE INTERMINABLE, NOS ENCONTRAMOS CON UNA SUBIDA MUY PRONUNCIADA Y A CONTINUACI&Oacute;N UNA FUERTE PENDIENTE, EL GRUPO SE DIVIDE, CASI LLEGAMOS A PARAR OTRA VEZ, QUEDABA POCO Y ESPERAMOS A LOS RESAGADOS PARA CRUZAR EL PRECIOSO PUENTE SOBRE EL EMBALSE BELESAR DEL RIO MI&Ntilde;O </strong></p>
+  <p align="center"><strong><img width="532" height="390" src="images/1089298579314.jpg"></strong></p>
+  <p align="center"><strong>LA VISTA ES INMEJORABLE, SUDOROSOS TUVIMOS LA TENTACION DE BA&Ntilde;ARNOS EN DICHO EMBALSE.</strong></p>
+  <p align="center"><strong> UNA VEZ CRUZADO EL PUENTE, FOTO DE RIGOR A LA ALTURA DE UNAS ESCALINATAS </strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 027.jpg"></strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/santiago 028.jpg"></strong></p>
+  <p align="center"><strong>DONDE SE DIVIDE EL CAMINO A LA IZDA. CONTINUA EL CAMINO DIRECCI&Oacute;N PALAS DE REY Y HACIA LA DCHA. DIRECCI&Oacute;N AL ALBERGUE DE PORTOMAR&Iacute;N, EXHAUSTOS LLEGAMOS UN POCO TARDE AL ALBERGUE, PREGUNTAMOS POR EL SELLO DE LA CREDENCIAL Y POR LAS CAMAS Y NOS DIJERON QUE SELL&Aacute;RAMOS MAS TARDE Y PARA ALOJARNOS TEN&Iacute;A QUE SER ENFRENTE DEL ALBERGUE PRINCIPAL QUE ESTABA COMPLETO; UN COLEGIO ADAPTADO PARA DORMIR, NOS ACOMPA&Ntilde;AN Y QUEDABAN UNAS 10 LITERAS LIBRES; DE LAS CUALES NOS ASIGNAN CINCO CASI EN MEDIO DE UNA HABITACI&Oacute;N DONDE APROXIMADANTE HABIAN UNAS 40 LITERAS. </strong></p>
+  <p align="center"><strong></strong></p>
+  <p align="center"><strong><img width="532" height="399" src="images/normal_img_7840.jpg"></strong></p>
+  <p align="center"><strong>DEJAMOS NUESTRAS MOCHILAS ENCIMA Y FUIMOS A DARNOS UNA RECONFORTANTE DUCHA, TRAS LA CUAL DECIDIMOS IR A PICAR ALGO (ALGUNA QUE OTRA TAPA) YA QUE LA COCINA YA ESTABA CERRADA, POR LA TARDE DIMOS UNA VUELTA POR ESTE PRECIOSO PUEBLO, PEQUE&Ntilde;O PERO CON UNAS VISTAS Y UNAS CASAS IMPRESIONANTES, DOS ITALIANAS SE PRESTARON PARA HACERNOS UNAS FOTOS, TAMBIEN UNA DANESA </strong></p>
+  <p align="center"><strong><img width="399" height="532" src="images/santiago 030.jpg"></strong></p>
+  <p align="center"><strong><img width="399" height="532" src="images/santiago 031.jpg"></strong></p>
+  <p align="center"><strong>ASI FU&Eacute; TRANSCURRIENDO EL TIEMPO HASTA LLEGAR A LA CENA, DONDE NOS SIRVIERON EL FAMOSO MEN&Uacute; DEL PEREGRINO (ESPAGUETIS DE 1&ordm; Y TERNERA CON PATATAS EN EL 2&ordm;, DE POSTRE TARTA HELADA.) </strong></p>
+  <p align="center"><strong>EMPIEZA A REFRESCAR EL TIEMPO Y DECIDIMOS ACOSTARNOS PRONTO PARA COMENZAR LA SIGUIENTE ETAPA A LAS 7,15 DE LA MA&Ntilde;ANA. </strong></p>
+  <p align="center"><strong>CONTIN&Uacute;A EN EL APARTADO 2&ordf; ETAPA. </strong></p>
+  <p align="center"><strong>(CUALQUIER COMENTARIO SOBRE ESTA ETAPA NO DUDES EN ESCRIBIRME) PULSA SOBRE EL BUZ&Oacute;N. </strong></p>
+  <p align="center"><strong></strong></p>
+</div>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+</body>
+</html>
